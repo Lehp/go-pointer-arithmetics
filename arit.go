@@ -44,7 +44,7 @@ func pointerArit[NumericT Number](v1 interface{}, v2 interface{}, method string)
 		return nil
 	}
 
-	v2F, err2  := convertToFloat64(v2)
+	v2F, err2 := convertToFloat64(v2)
 	if err2 != nil {
 		fmt.Errorf(err2.Error())
 		return nil
@@ -68,8 +68,8 @@ func pointerArit[NumericT Number](v1 interface{}, v2 interface{}, method string)
 }
 
 func convertToFloat64(v interface{}) (float64, error) {
+	// TODO why can't I compare to Numeric? -> Make it clean
 	switch v := v.(type) {
-
 	case *int:
 		return float64(*v), nil
 	case *int16:
@@ -110,7 +110,6 @@ func convertToFloat64(v interface{}) (float64, error) {
 		return 0, fmt.Errorf("not able to parse value [%v] as float64", v)
 	}
 }
-
 func ptr[T any](v T) *T {
 	return &v
 }
