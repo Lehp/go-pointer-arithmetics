@@ -13,9 +13,11 @@ The result is always returned as a pointer of whatever type you described.
 Examples: 
 
 asInt := Add[int](float64(13.25), int(2)) -> 15
+
 substract := Substract[int]("13", "2") -> 11
 
 float := Multiply[float64](ptr(string("13")), float64(2)) -> float64(26)
+
 divide := Divide[int]("13", ptr(string("2") -> 6
 
 Disclaimer: 
