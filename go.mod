@@ -1,4 +1,4 @@
-module github.com/Lehp/go-pointer-arithmetics
+module github.com/Lehp/ptrArit
 
 go 1.19
 
