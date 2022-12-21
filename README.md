@@ -18,6 +18,8 @@ substract := Substract[int]("13", "2") -> 11
 float := Multiply[float64](ptr(string("13")), float64(2)) -> float64(26)
 divide := Divide[int]("13", ptr(string("2") -> 6
 
-
+Disclaimer: 
+Unsafe can only handle intlike types and is thus not fitted for real arithmetic.
+Additionally you have to convert all your types to unsafe.Pointer before you can use it.
 
 
