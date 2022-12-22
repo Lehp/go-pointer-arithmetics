@@ -1,4 +1,4 @@
-module github.com/Lehp/ptrArit
+module github.com/Lehp/ptrValMath
 
 go 1.19
 
